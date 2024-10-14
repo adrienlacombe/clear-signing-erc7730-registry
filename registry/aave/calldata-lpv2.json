@@ -1,4 +1,5 @@
 {
+    "$schema": "../../specs/erc7730-v1.schema.json",
     "context": {
         "$id": "Lending Pool v2",
         "contract" : {
@@ -70,7 +71,7 @@
                         "format": "addressName",
                         "label": "For asset",
                         "params": {
-                            "type": "token"
+                            "types": ["token"]
                         }
                     },
                     {
@@ -110,7 +111,7 @@
                         "format": "addressName",
                         "label": "For asset",
                         "params": {
-                            "type": "token"
+                            "types": ["token"]
                         }
                     },
                     {
