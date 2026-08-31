@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-SolvBTC.json",
-  "dataProvider": {
-    "tokens": {
-      "0x7a56e1c57c7475ccf742a1832b028f0456652f97": {
-        "symbol": "SolvBTC",
-        "decimals": 18,
-        "name": "Solv BTC"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x7a56e1c57c7475ccf742a1832b028f0456652f97": { "symbol": "SolvBTC", "decimals": 18, "name": "Solv BTC" } } },
   "tests": [
     {
       "description": "Bridge SolvBTC deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "2.0709994 SolvBTC"
-          },
-          {
-            "label": "Recipient",
-            "value": "1459224505572635343476079401999681528865773099206328908869624029114702028742"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.00002086691834558 ETH"
-          }
+          { "label": "Amount to deposit", "value": "2.0709994 SolvBTC" },
+          { "label": "Recipient", "value": "1459224505572635343476079401999681528865773099206328908869624029114702028742" },
+          { "label": "Deposit fee", "value": "0.00002086691834558 ETH" }
         ],
         "interpolatedIntent": "Bridge 2.0709994 SolvBTC to 1459224505572635343476079401999681528865773099206328908869624029114702028742"
       }

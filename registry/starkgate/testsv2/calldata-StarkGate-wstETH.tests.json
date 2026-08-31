@@ -3,11 +3,7 @@
   "descriptor": "../calldata-StarkGate-wstETH.json",
   "dataProvider": {
     "tokens": {
-      "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": {
-        "symbol": "wstETH",
-        "decimals": 18,
-        "name": "Wrapped liquid staked Ether 2.0"
-      }
+      "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": { "symbol": "wstETH", "decimals": 18, "name": "Wrapped liquid staked Ether 2.0" }
     }
   },
   "tests": [
@@ -19,18 +15,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "393.740277823916629037 wstETH"
-          },
-          {
-            "label": "Recipient",
-            "value": "2612133988602042128559758723965110068219858553529202065896998677099210984641"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000021426863083503 ETH"
-          }
+          { "label": "Amount to deposit", "value": "393.740277823916629037 wstETH" },
+          { "label": "Recipient", "value": "2612133988602042128559758723965110068219858553529202065896998677099210984641" },
+          { "label": "Deposit fee", "value": "0.000021426863083503 ETH" }
         ],
         "interpolatedIntent": "Bridge 393.740277823916629037 wstETH to 2612133988602042128559758723965110068219858553529202065896998677099210984641"
       }
