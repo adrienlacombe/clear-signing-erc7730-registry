@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-LUSD.json",
-  "dataProvider": {
-    "tokens": {
-      "0x5f98805a4e8be255a32880fdec7f6728c6568ba0": {
-        "symbol": "LUSD",
-        "decimals": 18,
-        "name": "LUSD Stablecoin"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x5f98805a4e8be255a32880fdec7f6728c6568ba0": { "symbol": "LUSD", "decimals": 18, "name": "LUSD Stablecoin" } } },
   "tests": [
     {
       "description": "Bridge LUSD deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "700 LUSD"
-          },
-          {
-            "label": "Recipient",
-            "value": "1462900947582435605679032384075154186197418847381766175442414109738481444215"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000289901698544182 ETH"
-          }
+          { "label": "Amount to deposit", "value": "700 LUSD" },
+          { "label": "Recipient", "value": "1462900947582435605679032384075154186197418847381766175442414109738481444215" },
+          { "label": "Deposit fee", "value": "0.000289901698544182 ETH" }
         ],
         "interpolatedIntent": "Bridge 700 LUSD to 1462900947582435605679032384075154186197418847381766175442414109738481444215"
       }

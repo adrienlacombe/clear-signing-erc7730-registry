@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-MultiToken.json",
-  "dataProvider": {
-    "tokens": {
-      "0x04c46e830bb56ce22735d5d8fc9cb90309317d0f": {
-        "symbol": "EKUBO",
-        "decimals": 18,
-        "name": "Ekubo Protocol"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x04c46e830bb56ce22735d5d8fc9cb90309317d0f": { "symbol": "EKUBO", "decimals": 18, "name": "Ekubo Protocol" } } },
   "tests": [
     {
       "description": "Bridge MultiToken deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "897.916220666409403231 EKUBO"
-          },
-          {
-            "label": "Recipient",
-            "value": "232927797907865325978427212658798306278648948207976189993791585190996949405"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000021312097383957 ETH"
-          }
+          { "label": "Amount to deposit", "value": "897.916220666409403231 EKUBO" },
+          { "label": "Recipient", "value": "232927797907865325978427212658798306278648948207976189993791585190996949405" },
+          { "label": "Deposit fee", "value": "0.000021312097383957 ETH" }
         ],
         "interpolatedIntent": "Bridge 897.916220666409403231 EKUBO to 232927797907865325978427212658798306278648948207976189993791585190996949405"
       }

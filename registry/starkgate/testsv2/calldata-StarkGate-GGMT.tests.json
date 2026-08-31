@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-GGMT.json",
-  "dataProvider": {
-    "tokens": {
-      "0xb8224c7a42a92797cb0bddda48b58f80299535a3": {
-        "symbol": "BLT",
-        "decimals": 13,
-        "name": "BLT Token"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0xb8224c7a42a92797cb0bddda48b58f80299535a3": { "symbol": "BLT", "decimals": 13, "name": "BLT Token" } } },
   "tests": [
     {
       "description": "Bridge GGMT deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "0.00001 BLT"
-          },
-          {
-            "label": "Recipient",
-            "value": "2304500347772665391891601048999091721110586512125716154096258416038794472233"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000001 ETH"
-          }
+          { "label": "Amount to deposit", "value": "0.00001 BLT" },
+          { "label": "Recipient", "value": "2304500347772665391891601048999091721110586512125716154096258416038794472233" },
+          { "label": "Deposit fee", "value": "0.000001 ETH" }
         ],
         "interpolatedIntent": "Bridge 0.00001 BLT to 2304500347772665391891601048999091721110586512125716154096258416038794472233"
       }
