@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-uniBTC.json",
-  "dataProvider": {
-    "tokens": {
-      "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568": {
-        "symbol": "uniBTC",
-        "decimals": 8,
-        "name": "uniBTC"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568": { "symbol": "uniBTC", "decimals": 8, "name": "uniBTC" } } },
   "tests": [
     {
       "description": "Bridge uniBTC deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "0.001 uniBTC"
-          },
-          {
-            "label": "Recipient",
-            "value": "503208682974960957654613492079420175394528876231085304954611081349713464777"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000034314528715145 ETH"
-          }
+          { "label": "Amount to deposit", "value": "0.001 uniBTC" },
+          { "label": "Recipient", "value": "503208682974960957654613492079420175394528876231085304954611081349713464777" },
+          { "label": "Deposit fee", "value": "0.000034314528715145 ETH" }
         ],
         "interpolatedIntent": "Bridge 0.001 uniBTC to 503208682974960957654613492079420175394528876231085304954611081349713464777"
       }

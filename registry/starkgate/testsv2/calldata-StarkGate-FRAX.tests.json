@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-FRAX.json",
-  "dataProvider": {
-    "tokens": {
-      "0x853d955acef822db058eb8505911ed77f175b99e": {
-        "symbol": "FRAX",
-        "decimals": 18,
-        "name": "Frax"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x853d955acef822db058eb8505911ed77f175b99e": { "symbol": "FRAX", "decimals": 18, "name": "Frax" } } },
   "tests": [
     {
       "description": "Bridge FRAX deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "0.00001 FRAX"
-          },
-          {
-            "label": "Recipient",
-            "value": "278695777794361079063289338486631646777448048036499161988611534972586710577"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.00030302644495597 ETH"
-          }
+          { "label": "Amount to deposit", "value": "0.00001 FRAX" },
+          { "label": "Recipient", "value": "278695777794361079063289338486631646777448048036499161988611534972586710577" },
+          { "label": "Deposit fee", "value": "0.00030302644495597 ETH" }
         ],
         "interpolatedIntent": "Bridge 0.00001 FRAX to 278695777794361079063289338486631646777448048036499161988611534972586710577"
       }

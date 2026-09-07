@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-ETH.json",
-  "dataProvider": {
-    "tokens": {
-      "0x0000000000000000000000000000000000455448": {
-        "symbol": "ETH",
-        "decimals": 18,
-        "name": "Ether"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x0000000000000000000000000000000000455448": { "symbol": "ETH", "decimals": 18, "name": "Ether" } } },
   "tests": [
     {
       "description": "Bridge ETH deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "0.18 ETH"
-          },
-          {
-            "label": "Recipient",
-            "value": "906293467953950279858816137649925011354000870364107252460962552079665574281"
-          },
-          {
-            "label": "Total ETH sent",
-            "value": "0.180023032945077535 ETH"
-          }
+          { "label": "Amount to deposit", "value": "0.18 ETH" },
+          { "label": "Recipient", "value": "906293467953950279858816137649925011354000870364107252460962552079665574281" },
+          { "label": "Total ETH sent", "value": "0.180023032945077535 ETH" }
         ],
         "interpolatedIntent": "Bridge 0.18 ETH to 906293467953950279858816137649925011354000870364107252460962552079665574281"
       }
