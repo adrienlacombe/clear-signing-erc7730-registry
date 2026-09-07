@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-LINK.json",
-  "dataProvider": {
-    "tokens": {
-      "0x514910771af9ca656af840dff83e8264ecf986ca": {
-        "symbol": "LINK",
-        "decimals": 18,
-        "name": "ChainLink Token"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x514910771af9ca656af840dff83e8264ecf986ca": { "symbol": "LINK", "decimals": 18, "name": "ChainLink Token" } } },
   "tests": [
     {
       "description": "Bridge LINK deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "0.09286194940519792 LINK"
-          },
-          {
-            "label": "Recipient",
-            "value": "3519058450227323536373801734802231603547888502352253013030462381609715075723"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000023400729488168 ETH"
-          }
+          { "label": "Amount to deposit", "value": "0.09286194940519792 LINK" },
+          { "label": "Recipient", "value": "3519058450227323536373801734802231603547888502352253013030462381609715075723" },
+          { "label": "Deposit fee", "value": "0.000023400729488168 ETH" }
         ],
         "interpolatedIntent": "Bridge 0.09286194940519792 LINK to 3519058450227323536373801734802231603547888502352253013030462381609715075723"
       }

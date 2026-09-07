@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-R.json",
-  "dataProvider": {
-    "tokens": {
-      "0x183015a9ba6ff60230fdeadc3f43b3d788b13e21": {
-        "symbol": "R",
-        "decimals": 18,
-        "name": "R Stablecoin"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x183015a9ba6ff60230fdeadc3f43b3d788b13e21": { "symbol": "R", "decimals": 18, "name": "R Stablecoin" } } },
   "tests": [
     {
       "description": "Bridge R deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "0.000091 R"
-          },
-          {
-            "label": "Recipient",
-            "value": "1934855092282590467301357791317320540394841675308741461839854483025933217590"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000023527286359514 ETH"
-          }
+          { "label": "Amount to deposit", "value": "0.000091 R" },
+          { "label": "Recipient", "value": "1934855092282590467301357791317320540394841675308741461839854483025933217590" },
+          { "label": "Deposit fee", "value": "0.000023527286359514 ETH" }
         ],
         "interpolatedIntent": "Bridge 0.000091 R to 1934855092282590467301357791317320540394841675308741461839854483025933217590"
       }
