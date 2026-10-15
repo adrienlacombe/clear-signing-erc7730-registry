@@ -115,3 +115,7 @@ The earlier benchmark of #3069, 25 cases with 31 planted or real defects, had So
 A run reviews every unit of the pull request, the descriptors the pull request added or modified first and the smaller units first; the only limit is the 600 KB per unit above. The token usage of every request is in the artifact `ai-review-answers` of the run and in the footer of each comment.
 
 </details>
+
+## Batch review with Claude Code
+
+The skill [`ai-batch-review`](../../.claude/skills/ai-batch-review/SKILL.md) takes a batch of open descriptor pull requests through the pipeline and past it: it updates branches and approves the waiting review jobs, checks every note of the comments against the descriptor and the tests, reads the verified source when in doubt, posts one review per pull request with inline comments, and proposes changes to the prompt from what the notes got right and wrong. In Claude Code, in a checkout of this repository, run `/ai-batch-review`. It starts in dry run mode, where nothing is posted without a yes.
