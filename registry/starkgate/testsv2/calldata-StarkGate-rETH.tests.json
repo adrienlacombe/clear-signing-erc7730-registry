@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-rETH.json",
-  "dataProvider": {
-    "tokens": {
-      "0xae78736cd615f374d3085123a210448e74fc6393": {
-        "symbol": "rETH",
-        "decimals": 18,
-        "name": "Rocket Pool ETH"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0xae78736cd615f374d3085123a210448e74fc6393": { "symbol": "rETH", "decimals": 18, "name": "Rocket Pool ETH" } } },
   "tests": [
     {
       "description": "Bridge rETH deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "1.939089 rETH"
-          },
-          {
-            "label": "Recipient",
-            "value": "3324627590986921533841620396369572043610712200293144496546943691983915485580"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.00023084041671714 ETH"
-          }
+          { "label": "Amount to deposit", "value": "1.939089 rETH" },
+          { "label": "Recipient", "value": "3324627590986921533841620396369572043610712200293144496546943691983915485580" },
+          { "label": "Deposit fee", "value": "0.00023084041671714 ETH" }
         ],
         "interpolatedIntent": "Bridge 1.939089 rETH to 3324627590986921533841620396369572043610712200293144496546943691983915485580"
       }

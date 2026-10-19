@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-USDC.json",
-  "dataProvider": {
-    "tokens": {
-      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
-        "symbol": "USDC",
-        "decimals": 6,
-        "name": "USD Coin"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": { "symbol": "USDC", "decimals": 6, "name": "USD Coin" } } },
   "tests": [
     {
       "description": "Bridge USDC deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "50000.0001 USDC"
-          },
-          {
-            "label": "Recipient",
-            "value": "848070299526053948392933376246726704394421589282140038660100964094775378685"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000047109099284286 ETH"
-          }
+          { "label": "Amount to deposit", "value": "50000.0001 USDC" },
+          { "label": "Recipient", "value": "848070299526053948392933376246726704394421589282140038660100964094775378685" },
+          { "label": "Deposit fee", "value": "0.000047109099284286 ETH" }
         ],
         "interpolatedIntent": "Bridge 50000.0001 USDC to 848070299526053948392933376246726704394421589282140038660100964094775378685"
       }
