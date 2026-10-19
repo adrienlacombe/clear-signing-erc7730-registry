@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-AAVE.json",
-  "dataProvider": {
-    "tokens": {
-      "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9": {
-        "symbol": "AAVE",
-        "decimals": 18,
-        "name": "Aave Token"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9": { "symbol": "AAVE", "decimals": 18, "name": "Aave Token" } } },
   "tests": [
     {
       "description": "Bridge AAVE deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "2.062906718181402 AAVE"
-          },
-          {
-            "label": "Recipient",
-            "value": "2801043988405889674143304657273461670421892419705891945310637770175312101069"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000030689134887412 ETH"
-          }
+          { "label": "Amount to deposit", "value": "2.062906718181402 AAVE" },
+          { "label": "Recipient", "value": "2801043988405889674143304657273461670421892419705891945310637770175312101069" },
+          { "label": "Deposit fee", "value": "0.000030689134887412 ETH" }
         ],
         "interpolatedIntent": "Bridge 2.062906718181402 AAVE to 2801043988405889674143304657273461670421892419705891945310637770175312101069"
       }

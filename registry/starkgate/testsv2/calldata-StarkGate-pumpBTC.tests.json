@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-pumpBTC.json",
-  "dataProvider": {
-    "tokens": {
-      "0xf469fbd2abcd6b9de8e169d128226c0fc90a012e": {
-        "symbol": "pumpBTC",
-        "decimals": 8,
-        "name": "pumpBTC"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0xf469fbd2abcd6b9de8e169d128226c0fc90a012e": { "symbol": "pumpBTC", "decimals": 8, "name": "pumpBTC" } } },
   "tests": [
     {
       "description": "Bridge pumpBTC deposit - chain 1",
@@ -18,18 +10,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "0.00001 pumpBTC"
-          },
-          {
-            "label": "Recipient",
-            "value": "75518276078615138021218975328853041344703783344754324976578579543454992870"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000021145248656076 ETH"
-          }
+          { "label": "Amount to deposit", "value": "0.00001 pumpBTC" },
+          { "label": "Recipient", "value": "75518276078615138021218975328853041344703783344754324976578579543454992870" },
+          { "label": "Deposit fee", "value": "0.000021145248656076 ETH" }
         ],
         "interpolatedIntent": "Bridge 0.00001 pumpBTC to 75518276078615138021218975328853041344703783344754324976578579543454992870"
       }

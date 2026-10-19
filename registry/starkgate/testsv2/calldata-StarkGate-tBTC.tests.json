@@ -1,15 +1,7 @@
 {
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-tBTC.json",
-  "dataProvider": {
-    "tokens": {
-      "0x18084fba666a33d37592fa2633fd49a74dd93a88": {
-        "symbol": "tBTC",
-        "decimals": 18,
-        "name": "tBTC v2"
-      }
-    }
-  },
+  "dataProvider": { "tokens": { "0x18084fba666a33d37592fa2633fd49a74dd93a88": { "symbol": "tBTC", "decimals": 18, "name": "tBTC v2" } } },
   "tests": [
     {
       "description": "Bridge tBTC deposit - chain 1",
@@ -19,18 +11,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "1 tBTC"
-          },
-          {
-            "label": "Recipient",
-            "value": "75518276078615138021218975328853041344703783344754324976578579543454992870"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.00002178358397922 ETH"
-          }
+          { "label": "Amount to deposit", "value": "1 tBTC" },
+          { "label": "Recipient", "value": "75518276078615138021218975328853041344703783344754324976578579543454992870" },
+          { "label": "Deposit fee", "value": "0.00002178358397922 ETH" }
         ],
         "interpolatedIntent": "Bridge 1 tBTC to 75518276078615138021218975328853041344703783344754324976578579543454992870"
       }

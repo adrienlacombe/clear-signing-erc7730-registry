@@ -2,13 +2,7 @@
   "$schema": "../../../specs/erc7730-tests-v2.schema.json",
   "descriptor": "../calldata-StarkGate-enzoBTC.json",
   "dataProvider": {
-    "tokens": {
-      "0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a": {
-        "symbol": "enzoBTC",
-        "decimals": 8,
-        "name": "Lorenzo Wrapped Bitcoin"
-      }
-    }
+    "tokens": { "0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a": { "symbol": "enzoBTC", "decimals": 8, "name": "Lorenzo Wrapped Bitcoin" } }
   },
   "tests": [
     {
@@ -19,18 +13,9 @@
         "intent": "Bridge",
         "owner": "StarkWare",
         "fields": [
-          {
-            "label": "Amount to deposit",
-            "value": "0.001 enzoBTC"
-          },
-          {
-            "label": "Recipient",
-            "value": "2736592774753346244290231115983477705780476004823551050490646183823753285057"
-          },
-          {
-            "label": "Deposit fee",
-            "value": "0.000027852991430818 ETH"
-          }
+          { "label": "Amount to deposit", "value": "0.001 enzoBTC" },
+          { "label": "Recipient", "value": "2736592774753346244290231115983477705780476004823551050490646183823753285057" },
+          { "label": "Deposit fee", "value": "0.000027852991430818 ETH" }
         ],
         "interpolatedIntent": "Bridge 0.001 enzoBTC to 2736592774753346244290231115983477705780476004823551050490646183823753285057"
       }
