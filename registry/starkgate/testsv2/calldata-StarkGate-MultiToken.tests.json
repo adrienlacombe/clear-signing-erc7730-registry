@@ -7,6 +7,11 @@
         "symbol": "EKUBO",
         "decimals": 18,
         "name": "Ekubo Protocol"
+      },
+      "0xf38774a034f5f533d7f9e2ba6b7f3a7542714fa9": {
+        "symbol": "HSTK",
+        "decimals": 18,
+        "name": "Hashstack"
       }
     }
   },
@@ -33,6 +38,30 @@
           }
         ],
         "interpolatedIntent": "Bridge 897.916220666409403231 EKUBO to 232927797907865325978427212658798306278648948207976189993791585190996949405"
+      }
+    },
+    {
+      "description": "Bridge HSTK deposit with message - chain 1",
+      "rawTx": "0x02f8d3010e841dcd65008452d8ea078302f7e494f5b6ee2caeb6769659f6c091d209dfdcaf3f69eb8609184e72a000b8a4be58b18e000000000000000000000000f38774a034f5f533d7f9e2ba6b7f3a7542714fa90000000000000000000000000000000000000000000087d677827b222431000004a26b639175e476638df6b871fa59651487a28401c1a6cf86a1a9fce19dda6b00000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000c0",
+      "txHash": "0x25a639d5060da7e72105e6d9199e40d9d2a3332a62f24c6089b9293a5a68cf8a",
+      "expected": {
+        "intent": "Bridge",
+        "owner": "StarkWare",
+        "fields": [
+          {
+            "label": "Amount to deposit",
+            "value": "641475.69 HSTK"
+          },
+          {
+            "label": "Recipient",
+            "value": "2096221790039770878379989562914720526964666465338319278851149955379368942187"
+          },
+          {
+            "label": "Deposit fee",
+            "value": "0.00001 ETH"
+          }
+        ],
+        "interpolatedIntent": "Bridge 641475.69 HSTK to 2096221790039770878379989562914720526964666465338319278851149955379368942187"
       }
     }
   ]
